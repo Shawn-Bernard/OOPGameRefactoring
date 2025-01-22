@@ -1,20 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading;
 
 class Program
 {
+    //Can be made into method with something like this public void MakeList<T>() where T : new()
     static List<string> playerDeck = new List<string>();
     static List<string> playerHand = new List<string>();
     static List<string> enemyDeck = new List<string>();
     static List<string> enemyHand = new List<string>();
 
+    //This would be hierancy from character
     static int playerHealth = 100;
     static int playerMana = 100;
     static int playerShield = 0;
     static bool playerHasFireBuff = false;
     static bool playerHasIceShield = false;
 
+    //This would be hierancy from character
     static int enemyHealth = 100;
     static int enemyMana = 100;
     static int enemyShield = 0;
@@ -24,6 +29,11 @@ class Program
     static Random random = new Random();
 
     static void Main(string[] args)
+    {
+        StartGame();
+        //Console.ReadLine();
+    }
+    static void StartGame()
     {
         Console.WriteLine("=== Card Battle Game ===");
         InitializeDecks();
@@ -58,6 +68,35 @@ class Program
 
         Console.WriteLine(playerHealth <= 0 ? "You Lost!" : "You Won!");
         Console.ReadKey();
+    }
+    //Can be used to create list 
+    public void MakeList<T>() where T : new()
+    {
+        //Character
+    }
+    public abstract class Character
+    {
+        public List<string> Deck = new List<string>();
+        int health = 100, maxHealth = 100;
+        int mana = 100, maxMana = 100;
+        int shield;
+        bool HasFireBuff;
+        bool HasIceShield;
+        public int Health
+        {
+            get => health;
+            set
+            {
+                health = Math.Max(0, Math.Min(maxHealth, value));
+            }
+        }
+    }
+    public abstract class Cards
+    {
+        //public virtual void Effects(); 
+    }
+    public class Player: Character
+    {
     }
 
     static void InitializeDecks()

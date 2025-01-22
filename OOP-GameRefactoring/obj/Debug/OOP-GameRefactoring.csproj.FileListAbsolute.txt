@@ -1,0 +1,7 @@
+C:\Users\W0453579\Scripts\OOPGameRefactoring\OOP-GameRefactoring\obj\Debug\OOP-GameRefactoring.csproj.AssemblyReference.cache
+C:\Users\W0453579\Scripts\OOPGameRefactoring\OOP-GameRefactoring\obj\Debug\OOP-GameRefactoring.csproj.CoreCompileInputs.cache
+C:\Users\W0453579\Scripts\OOPGameRefactoring\OOP-GameRefactoring\bin\Debug\OOP-GameRefactoring.exe.config
+C:\Users\W0453579\Scripts\OOPGameRefactoring\OOP-GameRefactoring\bin\Debug\OOP-GameRefactoring.exe
+C:\Users\W0453579\Scripts\OOPGameRefactoring\OOP-GameRefactoring\bin\Debug\OOP-GameRefactoring.pdb
+C:\Users\W0453579\Scripts\OOPGameRefactoring\OOP-GameRefactoring\obj\Debug\OOP-GameRefactoring.exe
+C:\Users\W0453579\Scripts\OOPGameRefactoring\OOP-GameRefactoring\obj\Debug\OOP-GameRefactoring.pdb
